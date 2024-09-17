@@ -104,7 +104,7 @@ const Hero = () => {
           </span>
         </h4>
         <h3 className="text-[#fff]">
-          A Rust-based Crypto Wallet Deployed on ICP
+          A Blockchain Crypto Wallet Using Rust & ICP
         </h3>
       </div>
       <div className="home">
