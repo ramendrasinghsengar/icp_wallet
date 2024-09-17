@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
-import heroImg from "../assets/wallet.png";
+import heroImg from "../assets/hacler.png";
 import { Actor, HttpAgent } from "@dfinity/agent";
 import { LedgerCanister } from "@dfinity/ledger-icp";
 import { Principal } from "@dfinity/principal";
@@ -95,8 +95,7 @@ const Hero = () => {
   return (
     <>
       <div className="navbar">
-        <h1 className="!text-2xl">A Rust-based Crypto Wallet Deployed on ICP</h1>
-        <h4 className="text-[#fff]">
+        <h4 className="!text-2xl">
           <span className="text-gray-800 font-semibold text-base">
             Wallet Address :
           </span>{" "}
@@ -104,15 +103,17 @@ const Hero = () => {
             {walletAddress ? `${walletAddress}` : "Not connected"}
           </span>
         </h4>
+        <h3 className="text-[#fff]">
+          A Rust-based Crypto Wallet Deployed on ICP
+        </h3>
       </div>
       <div className="home">
-        <div className="left">
-          <img src={heroImg} alt="Wallet" />
-        </div>
-        <div className="right !h-fit !p-2">
-          <h1>RUST WALLET</h1>
+        <div className="left !h-fit !p-2">
+          <h1>ICP WALLET</h1>
           <div className="box !m-2">
-            <h4 className="!text-base">Connect your wallet to start using the wallet</h4>
+            <h4 className="!text-base">
+              Connect your wallet to start using the wallet
+            </h4>
             <button className="connect" onClick={handleConnectWallet}>
               Connect Wallet
             </button>
@@ -160,6 +161,9 @@ const Hero = () => {
               <h5 className="text-[#11ff40] font-semibold">{message}</h5>
             )}
           </div>
+        </div>
+        <div className="right">
+          <img src={heroImg} alt="Wallet" />
         </div>
       </div>
     </>
